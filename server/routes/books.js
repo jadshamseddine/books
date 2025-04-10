@@ -1,11 +1,18 @@
 const express = require('express');  
-const router = express.Router();  
 const Book = require('../models/Book');  
+const Category = require('../models/Category');  
+const router = express.Router();  
 
 // Get all books  
 router.get('/', async (req, res) => {  
-    const books = await Book.find();  
+    const books = await Book.find().populate('category');  
     res.send(books);  
+});  
+
+// Get all categories  
+router.get('/categories', async (req, res) => {  
+    const categories = await Category.find();  
+    res.send(categories);  
 });  
 
 // Add a new book  
