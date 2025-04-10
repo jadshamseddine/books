@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+
+body {  
+  margin: 0; /* Remove default body margin */  
+  background-color: #f8f9fa; /* Background color for the body */  
+}  
+
+#app { /* Assuming your root div has an id of app */  
+  min-height: 100%; /* Make sure it takes at least full viewport height */  
+  padding: 20px; /* Add some padding for aesthetics */  
+  display: flex; /* Use flexbox layout */  
+  flex-direction: column; /* Vertical stacking */  
+  align-items: center; /* Center elements horizontally */  
+  overflow: auto; /* Allow scrolling when content overflows */  
+}

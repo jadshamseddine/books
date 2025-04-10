@@ -1,0 +1,76 @@
+.book-list {  
+    /* max-width: 600px; Limit the width of book list   */
+    margin: 20px auto; /* Center the list on the page */  
+    padding: 20px; /* Internal padding */  
+    background-color: #ffffff; /* Background color for the list */  
+    border-radius: 8px; /* Rounded corners */  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */  
+}  
+
+.book-list ul {  
+    list-style-type: none; /* Remove default list bullets */  
+    padding: 0; /* Remove default padding */  
+}  
+
+.book-card {  
+    border: 1px solid #e0e0e0; /* Light border for each card */  
+    border-radius: 5px; /* Rounded edges */  
+    padding: 15px; /* Internal padding */  
+    margin-bottom: 15px; /* Space between cards */  
+    background-color: #f9f9f9; /* Light background for cards */  
+    transition: box-shadow 0.3s; /* Smooth transition for shadow */  
+}  
+
+.book-card:hover {  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */  
+}  
+
+.checked-out {  
+    background-color: #ffe6e6; /* Light red background for checked out books */  
+}  
+
+.book-card h3 {  
+    margin: 0 0 10px; /* Space below the title */  
+    color: #333; /* Dark color for the title */  
+}  
+
+.book-card p {  
+    margin: 5px 0; /* Small vertical margin for paragraphs */  
+    color: #555; /* Slightly lighter color for text */  
+}  
+
+.button-group {  
+    display: flex; /* Use flexbox for button layout */  
+    justify-content: space-between; /* Space buttons evenly */  
+}  
+
+.checkout-button, .delete-button {  
+    padding: 10px; /* Padding for buttons */  
+    border: none; /* Remove default border */  
+    border-radius: 4px; /* Rounded edges */  
+    font-size: 14px; /* Font size */  
+    cursor: pointer; /* Pointer cursor for buttons */  
+}  
+
+.checkout-button {  
+    background-color: #007bff; /* Button color for checkout */  
+    color: white; /* White text */  
+}  
+
+.checkout-button:hover:not([disabled]) {  
+    background-color: #0056b3; /* Darker blue on hover */  
+}  
+
+.delete-button {  
+    background-color: #dc3545; /* Button color for delete */  
+    color: white; /* White text */  
+}  
+
+.delete-button:hover {  
+    background-color: #c82333; /* Darker red on hover */  
+}  
+
+.delete-button:disabled {  
+    background-color: #e0e0e0; /* Gray background for disabled button */  
+    cursor: not-allowed; /* Not-allowed cursor for disabled button */  
+}
